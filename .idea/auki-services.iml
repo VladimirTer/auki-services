@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/messenger/src" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/service-aggregator/src" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/websocket/src" isTestSource="false" packagePrefix="App\" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/doctrine/deprecations" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/phpstan/phpdoc-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/cache-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/config" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/dependency-injection" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/framework-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/polyfill-php83" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/property-access" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/property-info" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/serializer" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/serializer-pack" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/type-info" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/var-exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/dflydev/fig-cookies" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/fig/http-message-util" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/laminas/laminas-cli" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/laminas/laminas-diactoros" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/laminas/laminas-escaper" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/laminas/laminas-httphandlerrunner" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/laminas/laminas-stratigility" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/mezzio/mezzio" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/mezzio/mezzio-router" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/mezzio/mezzio-swoole" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/mezzio/mezzio-template" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/psr/http-server-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/psr/http-server-middleware" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/service-aggregator/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/websocket/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/websocket/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/websocket/vendor/swoole/ide-helper" />
+      <excludeFolder url="file://$MODULE_DIR$/websocket/vendor/symfony/dependency-injection" />
+      <excludeFolder url="file://$MODULE_DIR$/websocket/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/websocket/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/websocket/vendor/symfony/var-exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/runtime" />
+      <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/yaml" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

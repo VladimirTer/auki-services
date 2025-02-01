@@ -1,0 +1,1 @@
+FROM openswoole/swoole:22.1.2-php8.2

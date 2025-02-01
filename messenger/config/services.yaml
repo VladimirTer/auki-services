@@ -1,0 +1,26 @@
+parameters:
+  websocket_host: '0.0.0.0'
+  websocket_port: 9503
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+  App\:
+    resource: '../src/'
+    exclude:
+      - '../src/DependencyInjection/'
+      - '../src/Entity/'
+      - '../src/Kernel.php'
+
+  App\Service\MessageDispatcherService: ~
+
+  App\HTTPServer\Infrastructure\Service\HttpServerService:
+    public: true
+    arguments:
+      $host: '%websocket_host%'
+      $port: '%websocket_port%'
+      $container: '@service_container'
+

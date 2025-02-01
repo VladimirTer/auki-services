@@ -1,0 +1,1 @@
+{"resources":[{"@type":"Symfony\\Component\\Config\\Resource\\FileResource","resource":"/var/www/auki-services/messenger/vendor/composer/installed.json"},{"@type":"Symfony\\Component\\Config\\Resource\\FileResource","resource":"/var/www/auki-services/messenger/server.php"}]}

@@ -1,0 +1,31 @@
+{
+    "name": "vladimirterehov/messenger",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "v1adt3r",
+            "email": "v1adt3r@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/http-kernel": "^7.2",
+        "symfony/dependency-injection": "^7.2",
+        "symfony/config": "^7.2",
+        "symfony/event-dispatcher": "^7.2",
+        "symfony/routing": "^7.2",
+        "symfony/framework-bundle": "^7.2",
+        "symfony/serializer-pack": "^1.3",
+        "symfony/yaml": "*",
+        "symfony/console": "^7.2",
+        "symfony/runtime": "^7.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true
+        }
+    }
+}

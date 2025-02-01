@@ -1,0 +1,92 @@
+version: '3.8'
+
+services:
+  swoole-websocket:
+    container_name: swoole-websocket
+    build:
+      context: .docker/swoole
+      dockerfile: Dockerfile
+    ports:
+      - "8085:8085"
+    volumes:
+      - ./websocket:/var/www/auki-services/websocket
+    restart: unless-stopped
+    command: php server.php
+    depends_on:
+      - auki-nginx
+      - auki-redis
+    working_dir: /var/www/auki-services/websocket
+    networks:
+      backend:
+
+
+  auki-nginx:
+    container_name: auki-nginx
+    hostname: auki.nginx.local
+    image: nginx:latest
+    ports:
+      - "${NGINX_PORT}:80"
+    volumes:
+      - ./websocket:/var/www/auki-services/websocket
+      - .docker/nginx/conf/default.conf:/etc/nginx/conf.d/default.conf
+    restart: unless-stopped
+    networks:
+      backend:
+
+  service-aggregator:
+    container_name: service-aggregator
+    build:
+      context: .docker/service-aggregator
+      dockerfile: Dockerfile
+    volumes:
+      - ./service-aggregator:/var/www/auki-services/service-aggregator
+    depends_on:
+      - swoole-websocket
+      - auki-redis
+    networks:
+      - backend
+    restart: unless-stopped
+    working_dir: /var/www/auki-services/service-aggregator
+    ports:
+      - "9502:9502"
+    command:
+      - php server.php
+
+  messenger:
+    container_name: messenger
+    hostname: messenger.php.local
+    working_dir: /var/www/auki-services/messenger
+    build:
+      context: .docker/messenger
+      dockerfile: Dockerfile
+    volumes:
+      - ./messenger:/var/www/auki-services/messenger
+    ports:
+      - "9503:9503"
+    depends_on:
+      - service-aggregator
+      - auki-redis
+    restart: unless-stopped
+    command:
+      - php server.php
+    networks:
+      backend:
+
+  auki-redis:
+    container_name: auki-redis
+    hostname: auki.redis.local
+    image: redis:latest
+    command: [ "redis-server", "--appendonly", "yes" ]
+    ports:
+      - "${REDIS_PORT}:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      backend:
+
+networks:
+  backend:
+
+volumes:
+  redis_data:
