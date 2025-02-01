@@ -5,24 +5,35 @@ declare(strict_types=1);
 namespace App\Shared\Infrastructure\Service;
 
 use App\Websocket\Domain\Service\WebsocketServer;
+use App\Websocket\Domain\Service\WebsocketServerFacade;
 use App\Websocket\Infrastructure\Service\WebsocketServerService;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
+use VladimirTer\CoreBundle\HttpClient\HttpClient;
 
 class ServiceContainerConfigurator
 {
     public static function configure(ContainerBuilder $container): void
     {
+        self::configureHttpClient($container);
         self::configureWebsocket($container);
+    }
+
+    private static function configureHttpClient(ContainerBuilder $container): void
+    {
+        $container->register('http-client', HttpClient::class)
+            ->addArgument('service-aggregator')
+            ->addArgument(9502);
     }
 
     private static function configureWebsocket(ContainerBuilder $container): void
     {
         // Domain
-        $container->register(id: 'websocket-server', class: WebsocketServer::class);
+        $container->register(id: 'websocket-server', class: WebsocketServer::class)
+            ->addArgument(new Reference(id: 'http-client'));
         $container->register(
             id: 'websocket-facade',
-            class: \App\Websocket\Domain\Service\WebsocketServerFacade::class
+            class: WebsocketServerFacade::class
         )->addArgument(new Reference(id: 'websocket-server'));
 
         // Operation

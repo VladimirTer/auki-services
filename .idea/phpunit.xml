@@ -4,6 +4,7 @@
     <option name="directories">
       <list>
         <option value="$PROJECT_DIR$/messenger/tests" />
+        <option value="$PROJECT_DIR$/websocket/tests" />
       </list>
     </option>
   </component>

@@ -15,7 +15,7 @@
         "php": ">=8.2",
         "swoole/ide-helper": "^6.0",
         "symfony/dependency-injection": "^7.2",
-        "auki/core-bundle": "^1.0"
+        "auki/core-bundle": "dev-main"
     },
     "version": "1.0.0"
 }

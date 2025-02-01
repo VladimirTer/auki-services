@@ -36,7 +36,6 @@ $server->on("request", function (OpenSwoole\Http\Request $request, OpenSwoole\Ht
     $response->header("Content-Type", "application/json");
     $path = $request->server['request_uri'];
 
-    // А как сделать тут агрегацию, получается у меня каждый сервис должен иметь свой роут?
     if ($path == '/api/v1/handleMessage' && $request->server['request_method'] == 'POST') {
         sendHttpRequestToOtherService($request->getContent());
         $response->end(json_encode([

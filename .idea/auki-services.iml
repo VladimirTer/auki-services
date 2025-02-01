@@ -7,6 +7,10 @@
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/websocket/src" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/messenger/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/messenger/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/websocket/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/websocket/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/doctrine/deprecations" />
       <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/phpdocumentor/reflection-common" />
@@ -86,6 +90,11 @@
       <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/console" />
       <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/runtime" />
       <excludeFolder url="file://$MODULE_DIR$/messenger/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/websocket/vendor/auki/core-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/websocket/vendor/openswoole/core" />
+      <excludeFolder url="file://$MODULE_DIR$/websocket/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/websocket/vendor/psr/http-server-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/websocket/vendor/psr/http-server-middleware" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

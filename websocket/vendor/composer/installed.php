@@ -1,6 +1,6 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
+        'pretty_version' => '1.0.0',
         'version' => '1.0.0.0',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
@@ -10,6 +10,26 @@
         'dev' => true,
     ),
     'versions' => array(
+        'auki/core-bundle' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../auki/core-bundle',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'reference' => '70a6e0168a9d90b6774d02d67753efe3191e883e',
+            'dev_requirement' => false,
+        ),
+        'openswoole/core' => array(
+            'pretty_version' => '22.1.5',
+            'version' => '22.1.5.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../openswoole/core',
+            'aliases' => array(),
+            'reference' => '06dae68fdac73341ccf565ecef388434bd893141',
+            'dev_requirement' => false,
+        ),
         'psr/container' => array(
             'pretty_version' => '2.0.2',
             'version' => '2.0.2.0',
@@ -24,6 +44,33 @@
             'provided' => array(
                 0 => '1.1|2.0',
             ),
+        ),
+        'psr/http-message' => array(
+            'pretty_version' => '2.0',
+            'version' => '2.0.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/http-message',
+            'aliases' => array(),
+            'reference' => '402d35bcb92c70c026d1a6a9883f06b2ead23d71',
+            'dev_requirement' => false,
+        ),
+        'psr/http-server-handler' => array(
+            'pretty_version' => '1.0.2',
+            'version' => '1.0.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/http-server-handler',
+            'aliases' => array(),
+            'reference' => '84c4fb66179be4caaf8e97bd239203245302e7d4',
+            'dev_requirement' => false,
+        ),
+        'psr/http-server-middleware' => array(
+            'pretty_version' => '1.0.2',
+            'version' => '1.0.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/http-server-middleware',
+            'aliases' => array(),
+            'reference' => 'c1481f747daaa6a0782775cd6a8c26a1bf4a3829',
+            'dev_requirement' => false,
         ),
         'swoole/ide-helper' => array(
             'pretty_version' => '6.0.0',
@@ -77,7 +124,7 @@
             'dev_requirement' => false,
         ),
         'vladimirterehov/websocket' => array(
-            'pretty_version' => '1.0.0+no-version-set',
+            'pretty_version' => '1.0.0',
             'version' => '1.0.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',

@@ -8,9 +8,14 @@ class ComposerStaticInit599f4cf74736fdbbb7a3bd2a547d9b42
 {
     public static $files = array (
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
+        '0f5c2e42cd57cee173a4e5751046ee6b' => __DIR__ . '/..' . '/openswoole/core/src/Coroutine/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'V' => 
+        array (
+            'VladimirTer\\CoreBundle\\' => 23,
+        ),
         'S' => 
         array (
             'Symfony\\Contracts\\Service\\' => 26,
@@ -19,7 +24,13 @@ class ComposerStaticInit599f4cf74736fdbbb7a3bd2a547d9b42
         ),
         'P' => 
         array (
+            'Psr\\Http\\Server\\' => 16,
+            'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
+        ),
+        'O' => 
+        array (
+            'OpenSwoole\\Core\\' => 16,
         ),
         'A' => 
         array (
@@ -28,6 +39,10 @@ class ComposerStaticInit599f4cf74736fdbbb7a3bd2a547d9b42
     );
 
     public static $prefixDirsPsr4 = array (
+        'VladimirTer\\CoreBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/auki/core-bundle/src',
+        ),
         'Symfony\\Contracts\\Service\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/service-contracts',
@@ -40,9 +55,22 @@ class ComposerStaticInit599f4cf74736fdbbb7a3bd2a547d9b42
         array (
             0 => __DIR__ . '/..' . '/symfony/dependency-injection',
         ),
+        'Psr\\Http\\Server\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-server-handler/src',
+            1 => __DIR__ . '/..' . '/psr/http-server-middleware/src',
+        ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'OpenSwoole\\Core\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/openswoole/core/src',
         ),
         'App\\' => 
         array (
